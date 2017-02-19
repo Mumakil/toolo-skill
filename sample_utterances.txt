@@ -1,9 +1,33 @@
 GetToday can I have beers
 GetToday can I have a beer
+GetToday can I go to a bar
+GetToday can I go to a pub
 GetToday is it possible to have beers
 GetToday is it possible to have a beer
+GetToday is it possible to go to a bar
+GetToday is it possible to go to a pub
+GetToday can I have beers in Toolo
+GetToday can I have a beer in Toolo
+GetToday can I go to a bar in Toolo
+GetToday can I go to a pub in Toolo
+GetToday is it possible to have beers in Toolo
+GetToday is it possible to have a beer in Toolo
+GetToday is it possible to go to a bar in Toolo
+GetToday is it possible to go to a pub in Toolo
 
 GetAnyDay can I have beers {Date}
 GetAnyDay can I have a beer {Date}
+GetAnyDay can I go to a bar {Date}
+GetAnyDay can I go to a pub {Date}
 GetAnyDay is it possible to have beers {Date}
 GetAnyDay is it possible to have a beer {Date}
+GetAnyDay is it possible to go to a bar {Date}
+GetAnyDay is it possible to go to a pub {Date}
+GetAnyDay can I have beers {Date} in Toolo
+GetAnyDay can I have a beer {Date} in Toolo
+GetAnyDay can I go to a bar {Date} in Toolo
+GetAnyDay can I go to a pub {Date} in Toolo
+GetAnyDay is it possible to have beers {Date} in Toolo
+GetAnyDay is it possible to have a beer {Date} in Toolo
+GetAnyDay is it possible to go to a bar {Date} in Toolo
+GetAnyDay is it possible to go to a pub {Date} in Toolo
