@@ -1,4 +1,4 @@
-package main
+package main // import "github.com/Mumakil/toolo-skill"
 
 import (
 	"encoding/json"
