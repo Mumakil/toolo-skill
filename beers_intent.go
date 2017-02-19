@@ -10,7 +10,7 @@ import (
 )
 
 const apiTimeFormat = "2006-01-02"
-const incomingFormat = "2016-01-02"
+const incomingFormat = "2006-01-02"
 
 // APIResponse is a response sent by the Töölö API
 type APIResponse struct {
@@ -31,12 +31,12 @@ func (bi *BeersIntent) Handler(echoReq *alexa.EchoRequest, echoResp *alexa.EchoR
 		date = time.Now()
 	case "GetAnyDay":
 		rawDate, err := echoReq.GetSlotValue("Date")
-		log.Println("Handling intent GetAnyDay with date", rawDate)
 		if err != nil {
 			log.Println("Date is missing:", err)
 			echoResp.OutputSpeech("Sorry, I did not understand which date you’re talking about.")
 			return
 		}
+		log.Println("Handling intent GetAnyDay with date", rawDate)
 		parsedDate, err := time.Parse(incomingFormat, rawDate)
 		if err != nil {
 			log.Println("Error parsing query date:", err)
