@@ -1,0 +1,24 @@
+{
+	"ImportPath": "github.com/Mumakil/toolo-skill",
+	"GoVersion": "go1.7",
+	"GodepVersion": "v79",
+	"Packages": [
+		"."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/codegangsta/negroni",
+			"Comment": "v0.2.0-102-g3c4d1f4",
+			"Rev": "3c4d1f44e5d9d1eb5acf3c661a17aaa837d1a067"
+		},
+		{
+			"ImportPath": "github.com/gorilla/mux",
+			"Comment": "v1.3.0-1-g94e7d24",
+			"Rev": "94e7d24fd285520f3d12ae998f7fdd6b5393d453"
+		},
+		{
+			"ImportPath": "github.com/mikeflynn/go-alexa/skillserver",
+			"Rev": "ca9bde7854923bcf74f5e1591d6d1a596492bb6f"
+		}
+	]
+}
