@@ -1,0 +1,16 @@
+{
+  "intents": [
+    {
+      "intent": "GetToday"
+    },
+    {
+      "intent": "GetAnyDay",
+      "slots": [
+        {
+          "name": "Date",
+          "type": "AMAZON.DATE"
+        }
+      ]
+    }
+  ]
+}

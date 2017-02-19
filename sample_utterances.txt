@@ -1,0 +1,9 @@
+GetToday can I have beers
+GetToday can I have a beer
+GetToday is it possible to have beers
+GetToday is it possible to have a beer
+
+GetAnyDay can I have beers {Date}
+GetAnyDay can I have a beer {Date}
+GetAnyDay is it possible to have beers {Date}
+GetAnyDay is it possible to have a beer {Date}
