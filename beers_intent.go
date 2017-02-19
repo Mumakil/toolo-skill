@@ -27,9 +27,11 @@ func (bi *BeersIntent) Handler(echoReq *alexa.EchoRequest, echoResp *alexa.EchoR
 	var date time.Time
 	switch echoReq.GetIntentName() {
 	case "GetToday":
+		log.Println("Handling intent GetToday")
 		date = time.Now()
 	case "GetAnyDay":
 		rawDate, err := echoReq.GetSlotValue("Date")
+		log.Println("Handling intent GetAnyDay with date", rawDate)
 		if err != nil {
 			log.Println("Date is missing:", err)
 			echoResp.OutputSpeech("Sorry, I did not understand which date you’re talking about.")
@@ -58,12 +60,13 @@ func (bi *BeersIntent) Handler(echoReq *alexa.EchoRequest, echoResp *alexa.EchoR
 
 func (bi *BeersIntent) fetchDataForDate(date time.Time) (bool, error) {
 	url := bi.APIURL + "/" + date.Format(apiTimeFormat)
+	log.Println("GET", url)
 	c := &http.Client{}
 	req, err := http.NewRequest("GET", url, nil)
-	req.Header.Add("Accept", "application/json")
 	if err != nil {
 		return false, err
 	}
+	req.Header.Add("Accept", "application/json")
 	resp, err := c.Do(req)
 	defer resp.Body.Close()
 	if err != nil {
