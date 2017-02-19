@@ -9,7 +9,7 @@ import (
 
 var appIDPtr = flag.String("appID", "", "Amazon Alexa Application ID for the skill")
 var portPtr = flag.String("port", "3000", "Port to run web server in")
-var apiURLPtr = flag.String("apiURL", "https://toolo-api.herokuapp.com/", "API to query the date information")
+var apiURLPtr = flag.String("apiURL", "https://toolo-api.herokuapp.com", "API to query the date information")
 
 func main() {
 	flag.Parse()
